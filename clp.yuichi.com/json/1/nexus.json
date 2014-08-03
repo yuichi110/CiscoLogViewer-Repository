@@ -1,0 +1,486 @@
+{
+"major_version":"1",
+"minor_version":"1",
+"product":"Nexus",
+
+"group":[
+		{"name":"Env",
+			"regex":["show module", "show inventory", "show environment", "show hardware", "show hardare internal version",
+			"show module%", "show inventory%", "show environment%"],
+			"highlight":[]
+		},
+		{"name":"obLog",
+			"regex":["show logging onboard", "show logging onboard%", "show logging nvram%"],
+			"highlight":[]
+		},
+		{"name":"gold",
+			"regex":["show diagnostic result%", "show diagnostic content%", "show diagnostic events%",
+			"show diagnostic internal diagmgr%", "show diagnostic internal diagclient%", "show diagnostic internal%",
+			"show diagnostic%", "show hardware internal errors%", "show hardware internal statistics%"],
+			"highlight":[]
+		},
+		{"name":"LineCard",
+			"regex":["show module", "show module internal exceptionlog", "show module internal error", "show module %"],
+			"highlight":[]
+		},
+		{"name":"Crash",
+			"regex":["show version", "show system reset-reason", "% cores%"],
+			"highlight":[]
+		},
+		{"name":"Sprom",
+			"regex":["show sprom%", "show hardware internal sprom%"],
+			"highlight":[]
+		},
+		{"name":"FileSys",
+			"regex":["show system internal flash", "show system internal urifs", "show system internal fs-daemon event-history errors",
+			"show system internal fs-daemon%", "% fs-daemon%"],
+			"highlight":[]
+		},
+		{"name":"PSS",
+			"regex":["show system internal pss", "show system internal pss%"],
+			"highlight":[]
+		},
+		{"name":"XBAR",
+			"regex":["show system internal xbar%", "show hardware internal xbar-driver%"],
+			"highlight":[]
+		},
+		{"name":"CMP",
+			"regex":["show system internal cmpproxy%"],
+			"highlight":[]
+		},
+
+
+		{"name":"Host",
+			"regex":["show switchname", "show version", "show clock","show system uptime", "show system resources", "dir bootflash:"],
+			"highlight":[]
+		},
+		{"name":"Config",
+			"regex":["show run", "show running-config", "show startup-config", "show running-config %","show startup-config %"],
+			"highlight":[]
+		},
+		{"name":"Log",
+			"regex":["show logging log%", "show logging nvram%"],
+			"highlight":[]
+		},
+		{"name":"boot",
+			"regex":["show boot", "show boot%", "show system internal bootvar log", "show install%", "% log install%"],
+			"highlight":[]
+		},
+		{"name":"AcLog",
+			"regex":["show accounting%"],
+			"highlight":[]
+		},
+		{"name":"License",
+			"regex":["show license", "show license%", "show system internal license%"],
+			"highlight":[]
+		},
+		{"name":"Cpu",
+			"regex":["show processes cpu%"],
+			"highlight":[]
+		},
+		{"name":"Memory",
+			"regex":["show processes memory%"],
+			"highlight":[]
+		},
+		{"name":"Process",
+			"regex":["show processes log%", "show processes vdc%", "show process %"],
+			"highlight":[]
+		},
+		{"name":"CoPP",
+			"regex":["show copp status", "show class-map type control-plane", "show policy-map type control-plane", "show policy-map interface control-plane"
+			,"show system internal copp info%", "show system internal copp%"],
+			"highlight":[]
+		},
+		{"name":"MTS",
+			"regex":["% mts%"],
+			"highlight":[]
+		},
+		{"name":"SysMgr",
+			"regex":["show system internal sysmgr%", "show system internal log sysmgr%"],
+			"highlight":[]
+		},
+		{"name":"Cpu-Mac",
+			"regex":["show hardware internal cpu-mac%"],
+			"highlight":[]
+		},
+		{"name":"Sockets",
+			"regex":["show sockets%"],
+			"highlight":[]
+		},
+		{"name":"Kernel",
+			"regex":["show system internal kernel%", "% kernel%"],
+			"highlight":[]
+		},
+		{"name":"SessionMgr",
+			"regex":["show config session%", "show system internal session-mgr%", "% session%"],
+			"highlight":[]
+		},
+
+
+		{"name":"adjacency",
+			"regex":["show ip adjacency%", "show ipv6 adjacency%", "show logging logfile | grep -i adjmgr",
+			"show system internal sysmgr service name adjmgr", "show system internal adjmgr%",
+			"% adjacency %", "% adjmgr %"],
+			"highlight":[]
+		},
+		{"name":"pktMgr",
+			"regex":["show system internal pktmgr%", "show system internal sysmgr service name netstack",
+			"show system internal buffers", "show hardware internal cpu-mac inband stats","show policy-map interface control-plane"],
+			"highlight":[]
+		},
+		{"name":"ethpm",
+			"regex":["show system internal ethpm%", "% ethpm%"],
+			"highlight":[]
+		},
+		{"name":"PIXM",
+			"regex":["show system internal pixm %", "% pixm %",
+			"show system internal pixmc %", "% pixmc %",
+			"show system internal gpixm%", "% gpixm %"],
+			"highlight":[]
+		},
+		{"name":"ELTM",
+			"regex":["show system internal sysmgr service name eltm", "show system internal eltm event-history%",
+			"show system internal eltm msgs%", "show system internal eltm info%",
+			"show system internal eltm%"],
+			"highlight":[]
+		},
+
+
+		{"name":"Interface",
+			"regex":["show interface%"],
+			"highlight":[]
+		},
+		{"name":"MAC",
+			"regex":["show mac address-table%", "show mac address%", "show hardware internal mac%"],
+			"highlight":[]
+		},
+		{"name":"Vlan",
+			"regex":["show vlan%", "show system internal interface-vlan%"],
+			"highlight":[]
+		},
+		{"name":"SVI",
+			"regex":["show system internal interface-vlan info", "show system internal interface-vlan port-state",
+			"show system internal interface-vlan event-history%", "show system internal interface-vlan%"],
+			"highlight":[]
+		},
+		{"name":"PortCh",
+			"regex":["show port-channel summary", "show port-channel usage",
+			 "show port-channel internal event-history errors", "show port-channel internal event-history%",
+			 "show port-channel%"],
+			"highlight":[]
+		},
+		{"name":"QoS",
+			"regex":["show class-map type qos%", "show class-map type queuing%", "show class-map type network-qos%",
+			"show policy-map type qos%", "show policy-map type queuing%", "show policy-map type network-qos%",
+			"show system internal qos%", "show system internal aclqos%", "show system internal ipqos%",
+			"show qos%", "%qos%", "% queuing%"],
+			"highlight":[]
+		},
+		{"name":"PortProfile",
+			"regex":["show port-profile%"],
+			"highlight":[]
+		},
+		{"name":"PVlan",
+			"regex":["show vlan private-vlan", "show vlan private-vlan%", "show interface private-vlan mapping",
+			"show system internal private-vlan info", "show system internal private-vlan%"],
+			"highlight":[]
+		},
+		{"name":"PSecurity",
+			"regex":["show running-config port-security all", "show port-security address", "show port-security address%",
+			"show system internal port-security%", "show port-security%"],
+			"highlight":[]
+		},
+		{"name":"WCCP",
+			"regex":["show running-config wccp", "show system internal wccp config-dump", 
+			"show system internal wccp event-history%", "% wccp%"],
+			"highlight":[]
+		},
+
+
+		{"name":"STP",
+			"regex":["show spanning-tree summary", "show spanning-tree active", "show spanning-tree detail", 
+			"show spanning-tree mst configuration", "show spanning-tree internal errors", "show spanning-tree internal%",
+			"show spanning-tree%"
+			],
+			"highlight":[]
+		},
+		{"name":"HSRP",
+			"regex":["show running-config hsrp", "show run hsrp", "show hsrp summary",
+			"show hsrp all detail", "show hsrp%", "show system internal sysmgr service name hsrp_engine"],
+			"highlight":[]
+		},
+		{"name":"VRRP",
+			"regex":["show vrrp%", "show system internal sysmgr service name vrrp-eng"],
+			"highlight":[]
+		},
+		{"name":"GLBP",
+			"regex":["show running-config glbp", "show glbp", "show glbp internal info%",
+			 "show glbp internal%", "show glbp%"],
+			"highlight":[]
+		},
+		{"name":"Lacp",
+			"regex":["show lacp internal info all", "show lacp counters", "show lacp internal event-history errors", 
+			"show lacp internal event-history%", "show lacp%"],
+			"highlight":[]
+		},
+		{"name":"VTP",
+			"regex":["show vtp status", "show vtp internal info", "show vtp internal event-history errors",
+			"show vtp internal event-history%", "show vtp internal%", "show vtp%"],
+			"highlight":[]
+		},
+		{"name":"CDP",
+			"regex":["show cdp all", "show cdp global", "show cdp neighbors%", "show cdp internal%", "show cdp%"],
+			"highlight":[]
+		},
+		{"name":"LLDP",
+			"regex":["show lldp neighbors", "show lldp%", "show system internal lldp info", 
+			"show system internal lldp%"],
+			"highlight":[]
+		},
+		{"name":"BFD",
+			"regex":["show running-config bfd%", "show startup-config bfd%", "show system internal bfd%",
+			"show system internal ascii-cfg%", "% bfd%"],
+			"highlight":[]
+		},
+		{"name":"UDLD",
+			"regex":["show udld", "show udld global", "show udld neighbors", "show udld internal debug%",
+			"show udld internal memory%", "show udld internal event-history errors", "show udld internal event-history%", 
+			"show udld%"],
+			"highlight":[]
+		},
+
+
+		{"name":"ARP",
+			"regex":["show running-config arp", "show ip arp vrf%", "show ip arp summary vrf%", "show ip arp detail%",
+			"show logging logfile | grep -i arp", "show system internal sysmgr service name arp", "show ip arp%"],
+			"highlight":[]
+		},
+		{"name":"IP",
+			"regex":["show running-config ip", "show ip interface brief vrf all", "show ip interface vaddr vrf all",
+			"show ip static-route vrf all", "show ip router-id vrf all", "show buffers ip",
+			"show ip client", "show ip traffic", "show ip process api vrf all",
+			"show ip internal boot-info", "show ip cache%", "show system internal sysmgr service name netstack"],
+			"highlight":[]
+		},
+		{"name":"IPv6",
+			"regex":["show ipv6%", "show running-config icmpv6", "show system internal icmpv6"],
+			"highlight":[]
+		},
+		{"name":"Route",
+			"regex":["show ip route", "show routing vrf all detail", "show routing multicast internal",
+			"% routing internal event-history%"],
+			"highlight":[]
+		},
+		{"name":"MCast",
+			"regex":["show ip mroute%", "show ip igmp%", "show routing multicast%", 
+			"show routing ip multicast%", "show ip multicast%", "show l2 mroute%"],
+			"highlight":[]
+		},
+		{"name":"ACL",
+			"regex":["show access-lists", "show vlan access-map", "show ip internal acl status%",
+			"show system internal access-list", "show system internal access-list%", 
+			"show system internal aclmgr status", "show system internal aclmgr log", 
+			"show system internal aclmgr time-range", "show system internal aclmgr sessions",
+			"show system internal aclmgr statistics buckets", "show system internal aclmgr%",
+			"show system internal aclqos info%", "show system internal aclqos event-history%",
+			"show system internal aclqos%"],
+			"highlight":[]
+		},
+		{"name":"PrefixList",
+			"regex":["show ip prefix-list%"],
+			"highlight":[]
+		},
+		{"name":"VRF",
+			"regex":["show vrf%", "% l3vm%"],
+			"highlight":[]
+		},
+		{"name":"PBR",
+			"regex":["show ip policy%", "show ipv6 policy%", "show system internal rpm event-history errors",
+			"show system internal rpm%"],
+			"highlight":[]
+		},
+		{"name":"PolicyMap",
+			"regex":["% policy-map%"],
+			"highlight":[]
+		},
+		{"name":"Tunnel",
+			"regex":["show tunnel%"],
+			"highlight":[]
+		},
+
+
+		{"name":"RIP",
+			"regex":["show running-config rip", "show ip rip vrf%", "show ip rip route%",
+			"show ip rip neighbor%", "show ip rip statistics%", "show ip rip interface detail%",
+			"show ip rip internal library-info", "show system internal sysmgr service name rip", 
+			"show ip rip internal mem-stats all detail", "show ip rip internal event-history errors",
+			"show ip rip internal event-history%", "show ip rip%",
+			"show ipv6 rip vrf%", "show ipv6 rip route%", "show ipv6 rip neighbor%",
+			"show ipv6 rip statistics%", "show ipv6 rip interface detail%", 
+			"show ipv6 rip internal library-info%", "show ipv6 rip%"],
+			"highlight":[]
+		},
+		{"name":"OSPF",
+			"regex":["show ip ospf vrf%", "show ip ospf neighbor%", "show ip ospf database%",
+			"show ip ospf summary-address%", "show ip ospf border-routers%", "show ip ospf vrf%",
+			"show ip ospf route%", "show ip ospf traffic%", "show ip ospf statistics%",
+			"show ip ospf internal%", "show ip ospf%", "show system internal sysmgr service name ospf",
+			"show system internal feature-mgr feature state | grep ospf"],
+			"highlight":[]
+		},
+		{"name":"OSPFv3",
+			"regex":["show ospfv3 vrf%", "show ospfv3 internal%", "show system internal sysmgr service name ospfv3",
+			"show system internal feature-mgr feature state | grep ospfv3"],
+			"highlight":[]
+		},
+		{"name":"EIGRP",
+			"regex":["show running-config eigrp", "show ip eigrp detail%", "show ip eigrp interfaces%",
+			"show ip eigrp traffic%", "show ip eigrp neighbors%", "show ip eigrp accounting%",
+			"show ip eigrp topology%", "show ip eigrp event%", "show system internal sysmgr service name eigrp",
+			"show system internal feature-mgr feature state | include eigrp", "show ip eigrp internal mem-stats",
+			"show ip eigrp internal%", "show ip eigrp%", "show ipv6 eigrp%"],
+			"highlight":[]
+		},
+		{"name":"ISIS",
+			"regex":["show isis vrf%", "show isis interface vrf%", "show isis ip route%",
+			"show isis ipv6 route", "show isis adjacency%", "show isis database%", 
+			"show isis hostname-table%", "show isis statistics vrf%", "show isis traffic%",
+			"show isis internal%", "show isis%"],
+			"highlight":[]
+		},
+		{"name":"BGP",
+			"regex":["show run bgp", "show bgp vrf%", "show bgp sessions%",
+			"show bgp statistics%", "show bgp process%", "show system internal sysmgr service name bgp",
+			"show system internal feature-mgr feature state | grep bgp", "show bgp internal%", "show bgp%"],
+			"highlight":[]
+		},
+		{"name":"MPLS",
+			"regex":["show mpls%", "show system internal mplsfwd%"],
+			"highlight":[]
+		},
+
+
+		{"name":"VPC",
+			"regex":["show running-config vpc", "show vpc%", "show system internal vpcm%"],
+			"highlight":[]
+		},
+		{"name":"CFS",
+			"regex":["show cfs application", "show cfs lock", "show cfs peers%",
+			"show cfs status%", "show cfs regions%", "show cfs merge%",
+			"show cfs internal%", "show cfs%"],
+			"highlight":[]
+		},
+		{"name":"FP",
+			"regex":["show running-config fabricpath%", "show startup-config fabricpath%",
+			"show fabricpath switch-id%", "show fabricpath conflict%", "show fabricpath ftag%",
+			"show fabricpath timers%",
+			"show fabricpath isis", "show fabricpath isis ", "show fabricpath isis adjacency%",
+			"show fabricpath isis database%", "show fabricpath isis route%", "show fabricpath isis tree%",
+			"show fabricpath isis%", "show system internal fabricpath switch-id%",
+			"show fabricpath topology%", "show system internal rtm%",
+			"show system internal l3vm%"],
+			"highlight":[]
+		},
+		{"name":"FEX",
+			"regex":["show fex", "show fex detail", "show fex%", "show system internal vntag%",
+			"sh system internal fex%", "show system internal vmm%", "show system internal sctptun%"],
+			"highlight":[]
+		},
+		{"name":"SNMP",
+			"regex":["show snmp%", "show system internal snmp%", "% snmp %"],
+			"highlight":[]
+		},
+		{"name":"EEM",
+			"regex":["show event manager%"],
+			"highlight":[]
+		},
+		{"name":"SPAN",
+			"regex":["show monitor", "show monitor session all", "show monitor internal errors",
+			"show monitor internal info%", "show monitor internal event-history msgs", "show system internal monitor%",
+			"show monitor internal event-history", "show monitor %"],
+			"highlight":[]
+		},
+		{"name":"NTP",
+			"regex":["show ntp%", "% ntp %"],
+			"highlight":[]
+		},
+		{"name":"XML",
+			"regex":["show xml server status", "show xml%"],
+			"highlight":[]
+		},
+		{"name":"Track",
+			"regex":["show running-config track", "show track brief", "show track",
+			"show track internal errors", "show track internal%", "show track%"],
+			"highlight":[]
+		},
+		{"name":"NetFlow",
+			"regex":["show flow monitor", "show flow record", "show flow exporter",
+			"show flow timeout", "show flow interface", "show flow internal event-history errors",
+			"show flow%", "show system internal flow nf errors", "show system internal flow%",
+			"show hardware flow%"],
+			"highlight":[]
+		},
+		{"name":"Radius",
+			"regex":["show running-config radius", "show radius-server directed-request", 
+			"show system internal radius event-history errors",
+			"show system internal radius event-history%", "show system internal radius%"],
+			"highlight":[]
+		},
+		{"name":"TACACS",
+			"regex":["show running-config tacacs%", "show tacacs-server%", "show system internal tacacs%"],
+			"highlight":[]
+		},
+		{"name":"Security",
+			"regex":["show users", "show user-account", "show telnet%",
+			"show ssh%", "show system internal security event-history errors", "show system internal security event-history%",
+			"show system internal security%"],
+			"highlight":[]
+		},
+		{"name":"Dot1X",
+			"regex":["show running-config dot1x", "show running-config aaa", "show running-config radius",
+			"show dot1x all details", "show dot1x%", "show system internal dot1x%"],
+			"highlight":[]
+		},
+		{"name":"AAA",
+			"regex":["show running-config aaa all", "show system internal aaa event-history%",
+			"show system internal aaa mem-stats%", "% aaa %"],
+			"highlight":[]
+		},
+		{"name":"CallHome",
+			"regex":["how running-config callhome%", "show system internal callhome%", 
+			"show snmp | include contact", "% callhome%"],
+			"highlight":[]
+		}
+
+	],
+
+"layer":[
+		{"parent_name":"Hard",
+			"child_names":["Env", "obLog", "GOLD", "Linecard", "Crash", "Sprom", "FileSys", "PSS", "XBAR", "CMP"]
+		},
+		{"parent_name":"Asic",
+			"child_names":["hd", "obLog", "gold", "linecard", "crash", "sprom", "xbar"]
+		},
+		{"parent_name":"Sys",
+			"child_names":["Host", "Config", "Log", "AcLog", "License", "Cpu", "Memory", "CoPP", "MTS", "SysMgr", "Cpu-Mac", "Sockets", "Kernel", "SessionMgr"]
+		},
+		{"parent_name":"Fwd",
+			"child_names":["adjacency", "pktMgr", "ethpm", "PIXM", "ELTM"]
+		},
+		{"parent_name":"L2",
+			"child_names":["Interface", "MAC", "Vlan", "SVI", "PortCh", "QoS", "PortProfile", "PVlan", "PSecurity", "WCCP"]
+		},
+		{"parent_name":"L2P",
+			"child_names":["STP", "HSRP", "VRRP", "GLBP", "Lacp", "VTP", "CDP", "LLDP", "BFD", "UDLD"]
+		},
+		{"parent_name":"L3",
+			"child_names":["ARP", "IP", "IPv6", "Route", "MCast", "ACL", "PrefixList", "VRF", "PBR", "PolicyMap", "Tunnel"]
+		},
+		{"parent_name":"L3P",
+			"child_names":["RIP", "OSPF", "OSPFv3", "EIGRP", "ISIS", "BGP", "MPLS"]
+		},
+		{"parent_name":"Ftr",
+			"child_names":["VPC", "CFS", "FP", "FEX", "SNMP", "EEM", "SPAN", "NTP", "XML", "Track", "NetFlow", "Radius", "TACACS", "Security", "Dot1X", "AAA", "CallHome"]
+		}
+	]
+}
